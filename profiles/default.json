@@ -9,7 +9,7 @@
       "rotate_ccw": "volume:down",
       "press": "next_function",
       "show_percentage": false,
-      "show_ring": false
+      "show_ring": true
     },
     {
       "label": "Brightness",
@@ -18,7 +18,7 @@
       "rotate_ccw": "brightness:down",
       "press": "next_function",
       "show_percentage": false,
-      "show_ring": false
+      "show_ring": true
     }
   ]
 }

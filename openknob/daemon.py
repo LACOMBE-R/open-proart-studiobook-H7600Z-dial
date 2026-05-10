@@ -60,9 +60,9 @@ def decode_packet(packet: bytes) -> Optional[KnobEvent]:
     if len(packet) != HID_REPORT_SIZE:
         return None
 
-    if packet == b"\x0A\x01\x00\x00":
+    if packet == b"\x01\x01\x00\x00":
         return KnobEvent("press", raw=packet)
-    if packet == b"\x0A\x00\x00\x00":
+    if packet == b"\x01\x00\x00\x00":
         return KnobEvent("release", raw=packet)
 
     delta = signed_int16(packet, 2)

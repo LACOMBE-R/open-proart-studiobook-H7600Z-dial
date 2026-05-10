@@ -416,6 +416,8 @@ class OverlayWindow(QWidget):
         try:
             data = self.sock.recv(1024)
             if not data:
+                self.sock.close()
+                self.sock = None
                 return
             self.pending += data
             while b"\n" in self.pending:
