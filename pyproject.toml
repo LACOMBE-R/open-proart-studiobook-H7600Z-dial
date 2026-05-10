@@ -1,0 +1,25 @@
+[project]
+name = "openknob"
+version = "0.1.0"
+description = "ASUS Dial daemon and tools for Linux/GNOME"
+requires-python = ">=3.10"
+license = "GPL-3.0-or-later"
+dependencies = ["PyQt6"]
+
+[tool.setuptools.packages.find]
+include = ["openknob*"]
+
+[project.optional-dependencies]
+wayland = ["PyGObject"]
+x11 = ["python-xlib"]
+
+[project.scripts]
+openknob-daemon = "openknob.daemon:main"
+openknob-hid-probe = "openknob.hid_probe:main"
+openknob-hid-action-test = "openknob.hid_action_test:main"
+openknob-overlay = "openknob.overlay:main"
+openknob-config = "openknob.config_ui:main"
+
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"

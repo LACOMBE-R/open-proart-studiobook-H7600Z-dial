@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=openknob
+Comment=ASUS Dial configuration
+Exec=openknob-config
+Icon=input-dialpad-symbolic
+Categories=Settings;HardwareSettings;
+Keywords=dial;knob;asus;proart;
+StartupNotify=true

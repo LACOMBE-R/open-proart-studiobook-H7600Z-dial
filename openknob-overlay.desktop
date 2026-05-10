@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=openknob overlay
+Exec=openknob-overlay
+NoDisplay=true
+X-GNOME-Autostart-enabled=true

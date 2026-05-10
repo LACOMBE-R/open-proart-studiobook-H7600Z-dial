@@ -1,0 +1,24 @@
+{
+  "name": "default",
+  "match": ".*",
+  "functions": [
+    {
+      "label": "Volume",
+      "icon": "audio-volume-high-symbolic",
+      "rotate_cw": "volume:up",
+      "rotate_ccw": "volume:down",
+      "press": "next_function",
+      "show_percentage": false,
+      "show_ring": false
+    },
+    {
+      "label": "Brightness",
+      "icon": "display-brightness-symbolic",
+      "rotate_cw": "brightness:up",
+      "rotate_ccw": "brightness:down",
+      "press": "next_function",
+      "show_percentage": false,
+      "show_ring": false
+    }
+  ]
+}

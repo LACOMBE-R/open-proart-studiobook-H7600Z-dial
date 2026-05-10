@@ -1,0 +1,6 @@
+[console_scripts]
+openknob-config = openknob.config_ui:main
+openknob-daemon = openknob.daemon:main
+openknob-hid-action-test = openknob.hid_action_test:main
+openknob-hid-probe = openknob.hid_probe:main
+openknob-overlay = openknob.overlay:main

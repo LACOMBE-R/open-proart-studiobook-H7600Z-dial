@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: openknob
+Version: 0.1.0
+Summary: ASUS Dial daemon and tools for Linux/GNOME
+License-Expression: GPL-3.0-or-later
+Requires-Python: >=3.10
+Requires-Dist: PyQt6
+Provides-Extra: wayland
+Requires-Dist: PyGObject; extra == "wayland"
+Provides-Extra: x11
+Requires-Dist: python-xlib; extra == "x11"

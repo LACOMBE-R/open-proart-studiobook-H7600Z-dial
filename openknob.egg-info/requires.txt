@@ -1,0 +1,7 @@
+PyQt6
+
+[wayland]
+PyGObject
+
+[x11]
+python-xlib
