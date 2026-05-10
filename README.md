@@ -1,5 +1,4 @@
-# openknob
-
+Open Asus Dial Driver and config UI
 Linux daemon and overlay UI for the **ASUS ProArt Studiobook hardware dial**.
 
 > ⚠️ **Heads up** — this project is heavily vibecoded. It works great for me on
