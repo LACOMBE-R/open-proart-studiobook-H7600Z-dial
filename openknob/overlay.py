@@ -446,6 +446,11 @@ def main() -> int:
     parser.add_argument("--socket", default=DEFAULT_SOCKET)
     args = parser.parse_args()
 
+    # Wayland compositors reject arbitrary window positioning; force XWayland
+    # so move() works correctly. XWayland is always present when DISPLAY is set.
+    if _os.environ.get("WAYLAND_DISPLAY") and not _os.environ.get("QT_QPA_PLATFORM"):
+        _os.environ["QT_QPA_PLATFORM"] = "xcb"
+
     app = QApplication(sys.argv)
     overlay = OverlayWindow(args.socket)
     overlay.show()
